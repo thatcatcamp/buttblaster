@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BUTT FRENZY</title>
+    <style>
+        body {
+            background-color: darkslateblue;
+            color: whitesmoke;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace;
+        }
+
+        /* Style the header */
+        header {
+            background-color: black;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            max-height: fit-content;
+        }
+
+        /* Container for flexboxes */
+        section {
+            background-color: black;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        /* Style the navigation menu */
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style the content */
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 2;
+            flex: 2;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+
+        img {
+            max-height:300px;
+            width:auto;
+        }
+    </style>
+    <script type = "text/JavaScript">
+
+       function AutoRefresh( t ) {
+           console.log("reload");
+          setTimeout("location.reload(true);", t);
+       }
+
+    </script>
+</head>
+<body onload = "AutoRefresh(1000);">
+<p>Yes, we are toddlers.  This laptop is running a trained ImageAI model looking for butts or boobs - and when it sees them responds.</p>
+<p><strong>Note:</strong> Hold the butt stick to consent to being in Butt Frenzy 2023 - a cheesy, exploitation of your poor choices.  Find link on our web site - password is <i>ithurtswhenipee</i></p>
+
+<header>
+    <h2 style="font-family: fantasy">Butt Frenzy!</h2>
+</header>
+
+<section>
+    <nav style="background-color: black;">
+        <ul>
+            <li>Butts: $butts</li>
+            <li>Boobs: $boobs</li>
+            <li>Cats: $cats</li>
+
+        </ul>
+    </nav>
+
+    <article style="background-color: black;">
+        <img src="/tmp/swap.jpg">
+    </article>
+</section>
+
+<footer>
+    <p>Frenzy time $gmt</p>
+</footer>
+
+</body>
+</html>
