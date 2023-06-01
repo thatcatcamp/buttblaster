@@ -22,21 +22,21 @@ exit(1)
 """
 prediction = CustomImageClassification()
 prediction.setModelTypeAsResNet50()
-prediction.setModelPath(os.path.join(execution_path, "images", "models", "resnet50-images-test_acc_0.76923_epoch-82.pt"))
+prediction.setModelPath(os.path.join(execution_path, "images", "models", "resnet50-images-test_acc_0.46154_epoch-1.pt"))
 prediction.setJsonPath(os.path.join(execution_path, "images", "models", "images_model_classes.json"))
 prediction.loadModel()
 
-predictions, probabilities = prediction.classifyImage(os.path.join(execution_path, "boobs.jpg"), result_count=1)
+predictions, probabilities = prediction.classifyImage(os.path.join(execution_path, "images/test/boobs/2bkl2um39jya1.jpg"), result_count=1)
 
 for eachPrediction, eachProbability in zip(predictions, probabilities):
     print(eachPrediction , " : " , eachProbability)
 
-predictions, probabilities = prediction.classifyImage(os.path.join(execution_path, "cat.jpg"), result_count=1)
+predictions, probabilities = prediction.classifyImage(os.path.join(execution_path, "images/test/cats/50.jpg"), result_count=1)
 
 for eachPrediction, eachProbability in zip(predictions, probabilities):
     print(eachPrediction , " : " , eachProbability)
 
-predictions, probabilities = prediction.classifyImage(os.path.join(execution_path, "butt.jpg"), result_count=1)
+predictions, probabilities = prediction.classifyImage(os.path.join(execution_path, "images/test/butt/m9kjy8i9nqxa1.jpg"), result_count=1)
 
 for eachPrediction, eachProbability in zip(predictions, probabilities):
     print(eachPrediction , " : " , eachProbability)
